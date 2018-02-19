@@ -1,0 +1,99 @@
+body, h1, h2, h3, h4,h5, h6, p{
+	font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: #3F3E3E;
+    line-height: 1.8;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    /*background-image: url('https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1502&q=80');*/
+    background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-0.3.5&s=888bdf9852e72f0684ec8c7f053f84ed&auto=format&fit=crop&w=1051&q=80');
+    min-height: 100%;
+}
+
+/* project image (Projects) */
+.bgimg-2 {
+	background-image: url('https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=65a04c7e91b920857c81143b62307342&auto=format&fit=crop&w=967&q=80');
+    min-height: 400px;
+}
+
+/* contact image (Contact) */
+.bgimg-3 {
+    background-image: url("https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1502&q=80");
+    min-height: 400px;
+}
+.w3-wide {
+	letter-spacing: 10px;
+}
+.w3-hover-opacity {
+	cursor: pointer;
+}
+
+/*navbar styling */
+#myNavbar{
+	text-align: right;
+    font-size: 1.4em;
+    padding: 20px;
+}
+
+#myNavbar a{
+	padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#myNavbar a:hover{
+    color: #C1C2C4;
+}
+
+#about >h1{
+	color: #2D2E2E !important;
+    font-weight: bold;
+}
+
+/*span header for projects and contact section */
+.w3-text-white{
+	color: #2D2E2E !important;
+    font-weight: bold;
+
+}
+
+/* about me content styling */
+.p-content{
+	text-align: justify;
+}
+
+/* remove underline in w3school link in p*/
+.p-content > a {
+	text-decoration: none;
+}
+
+.w3link{
+	color: #259EEC;
+}
+
+/* inline block project list */
+.projects-list > div {
+	float: left;
+    padding: 50px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+}
